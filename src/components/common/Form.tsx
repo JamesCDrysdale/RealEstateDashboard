@@ -38,7 +38,7 @@ const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onF
               fontSize: 16,
               color: '#11142D'
             }}>
-                Enter Property Name
+              Enter Property Name
             </FormHelperText>
             <TextField 
               fullWidth
@@ -46,8 +46,143 @@ const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onF
               id="outlined-basic"
               color="info"
               variant="outlined"
+              {...register('title', {required: true})}
             />
           </FormControl>
+
+          <FormControl>
+            <FormHelperText sx={{
+              fontWeight: 500,
+              margin: '10px 0',
+              fontSize: 16,
+              color: '#11142D'
+            }}>
+              Enter Description
+            </FormHelperText>
+            <TextareaAutosize
+              minRows={5}
+              required
+              placeholder='Write property description'
+              color='info'
+              style={{
+                width: '100%',
+                background: 'transparent',
+                fontSize: '16px',
+                borderColor: 'rgba(0,0,00,0.23)',
+                borderRadius: 6,
+                padding: 10,
+                color: '#919191'
+              }}
+              {...register('description', {required: true})}
+            />
+          </FormControl>
+
+          <Stack direction='row' gap={4}>
+              <FormControl sx={{ flex: 1}}>
+                <FormHelperText sx={{
+                  fontWeight: 500,
+                  margin: '10px 0',
+                  fontSize: 16,
+                  color: '#11142D'
+                }}>
+                  Select Property Type
+                </FormHelperText>
+                <Select
+                  variant='outlined'
+                  color="info"
+                  displayEmpty
+                  required
+                  inputProps={{ 'aria-label': 'without-label' }}
+                  defaultValue="flat"
+                  {...register('propertyType', {required: true})}
+                > 
+                  <MenuItem value="bungalow">Bungalow</MenuItem>
+                  <MenuItem value="chalet">Chalet</MenuItem>
+                  <MenuItem value="cottage">Cottage</MenuItem>
+                  <MenuItem value="detached">Detatched</MenuItem>
+                  <MenuItem value="duplex">Duplex</MenuItem>
+                  <MenuItem value="endofterrace">End-of-terrace</MenuItem>
+                  <MenuItem value="flat">Flat</MenuItem>
+                  <MenuItem value="mansion">Mansion</MenuItem>
+                  <MenuItem value="semidetatched">Semi-detached</MenuItem>
+                  <MenuItem value="studio">Studio</MenuItem>
+                  <MenuItem value="terraced">Terraced</MenuItem>
+                </Select>
+              </FormControl>
+              <FormControl>
+                <FormHelperText sx={{
+                  fontWeight: 500,
+                  margin: '10px 0',
+                  fontSize: 16,
+                  color: '#11142D'
+                }}>
+                  Enter Property Price
+                </FormHelperText>
+                <TextField 
+                  fullWidth
+                  required
+                  id="outlined-basic"
+                  type="number"
+                  color="info"
+                  variant="outlined"
+                  {...register('price', {required: true})}
+                />
+              </FormControl>
+          </Stack>
+          <FormControl>
+                <FormHelperText sx={{
+                  fontWeight: 500,
+                  margin: '10px 0',
+                  fontSize: 16,
+                  color: '#11142D'
+                }}>
+                  Enter Location
+                </FormHelperText>
+                <TextField 
+                  fullWidth
+                  required
+                  id="outlined-basic"
+                  color="info"
+                  variant="outlined"
+                  {...register('location', {required: true})}
+                />
+              </FormControl>
+              
+              <Stack direction="column" gap={1} justifyContent="center" mb={2}>
+                <Stack direction="row" gap={2}>
+                  <Typography color="#11142D" fontSize={16} fontWeight={500} my="10px">
+                    Property Photo
+                  </Typography>
+
+                  <Button component="label" sx={{
+                    width: 'fit-content',
+                    color: '#2ED480',
+                    textTransform: 'capitalize',
+                    fontSize: 16
+                  }}>
+                    Upload *
+                    <input 
+                      hidden
+                      accept="image/*"
+                      type="file"
+                      onChange={(e) => {
+                        // @ts-ignore
+                        handleImageChange(e.target.files[0])
+                      }}
+                    />
+                  </Button>
+                </Stack>
+                <Typography fontSize={14} color="#808191" sx={{ wordBreak: 'break-all' }}>
+                  {propertyImage?.name}
+                </Typography>
+              </Stack>
+
+              <CustomButton 
+                type="submit"
+                title={formLoading ? 'Submitting...' : 'Submit'}
+                backgroundColor="#475BE8"
+                color="#FCFCFC"
+              />
         </form>
       </Box>
     </Box>

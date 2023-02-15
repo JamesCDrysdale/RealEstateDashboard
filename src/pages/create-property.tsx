@@ -3,7 +3,7 @@ import { useGetIdentity } from "@pankod/refine-core";
 import { FieldValue, useForm } from "@pankod/refine-react-hook-form";
 import { useNavigate } from "@pankod/refine-react-router-v6";
 
-// import Form from "components/common/Form";
+import Form from "components/common/Form";
 
 
 const CreateProperty = () => {
@@ -16,17 +16,16 @@ const CreateProperty = () => {
   const onFinishHandler = () => {};
 
   return (
-    <p>tbc</p>
-    // <Form 
-    //   type="Create"
-    //   register={register}
-    //   onFinish={onFinish}
-    //   formLoading={formLoading}
-    //   handleSubmit={handleSubmit}
-    //   handleImageChange={handleImageChange}
-    //   onFinishHandler={onFinishHandler}
-    //   propertyImage={propertyImage}
-    // />
+    <Form 
+      type="Create"
+      register={register}
+      onFinish={onFinish}
+      formLoading={formLoading}
+      handleSubmit={handleSubmit}
+      handleImageChange={handleImageChange}
+      onFinishHandler={onFinishHandler}
+      propertyImage={propertyImage}
+    />
   )
 }
 
