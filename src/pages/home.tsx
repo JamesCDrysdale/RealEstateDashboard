@@ -30,13 +30,13 @@ const Home = () => {
                 <PieChart 
                     title="Total Customers"
                     value={5684}
-                    series={[75, 25]}
+                    series={[85, 15]}
                     colors={['#475BE8', '#E4B8EF']}
                 />
                 <PieChart 
                     title="Properties for cities"
                     value={555}
-                    series={[75, 25]}
+                    series={[55, 45]}
                     colors={['#475BE8', '#E4B8EF']}
                 />
             </Box> 
