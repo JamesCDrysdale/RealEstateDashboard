@@ -3,7 +3,7 @@ import { useList } from "@pankod/refine-core";
 import { Box, Stack, Typography } from '@pankod/refine-mui'
 import { useNavigate } from "@pankod/refine-react-router-v6";
 
-// import { PropertyCard, CustomButton } from "components";
+import { PropertyCard, CustomButton } from "components";
 
 const AllProperties = () => {
   const navigate = useNavigate();
@@ -14,13 +14,13 @@ const AllProperties = () => {
         <Typography fontSize={25} fontWeight={700} color="#11142D">
           All Properties
         </Typography>
-        {/* <CustomButton 
+        <CustomButton 
           title="Add Property"
           handleClick={() => navigate('/properties/create')}
           backgroundColor="#475BE8"
           color="#FCFCFC"
           icon={<Add />}
-        /> */}
+        />
       </Stack>
     </Box>
   )
