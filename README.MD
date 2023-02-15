@@ -47,7 +47,7 @@ To learn more about **refine**, please check out the [Documentation](https://ref
 - **Custom Layout** [Docs](https://refine.dev/docs/ui-frameworks/mui/customization/mui-custom-layout/)
 - **React Router** [Docs](https://refine.dev/docs/core/providers/router-provider/)
 - **Google Auth Provider** [Docs](https://refine.dev/docs/core/providers/auth-provider/)
-
+- **Apex Charts** [Docs](https://apexcharts.com/docs/installation/)
 
 ## License
 
