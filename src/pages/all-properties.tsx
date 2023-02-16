@@ -21,6 +21,13 @@ const AllProperties = () => {
   // Check we have the data and is not default to an empty array
   const allProperties = data?.data ?? [];
 
+  // Sort by Price
+  const currentPrice = sorter.find((item) => item.field === 'price')?.order;
+
+  const toggleSort = (field: string) => {
+    setSorter([{ field, order: currentPrice === 'asc' ? 'desc' : 'asc' }]);
+  }
+
   if (isLoading) return <Typography>Loading... </Typography>
   if (isError) return <Typography>Error...</Typography>
 
@@ -34,10 +41,10 @@ const AllProperties = () => {
           <Box mb={2} mt={3} display="flex" flexWrap="wrap" width="85%" justifyContent="space-between">
             <Box display="flex" flexWrap="wrap" gap={2} mb={{ xs: '20px', sm: 0 }} >
               <CustomButton 
-                title={`Sort price`}
+                title={`Sort price ${currentPrice === 'asc' ? '↑' : '↓'}`}
                 color="#FCFCFC"
                 backgroundColor="#475BE8"
-                handleClick={() => {}}
+                handleClick={() => toggleSort('price')}
               />
               <TextField 
                 variant="outlined"
