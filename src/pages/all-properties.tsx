@@ -90,6 +90,42 @@ const AllProperties = () => {
           />
         ))}
       </Box>
+      
+      {allProperties.length > 0 && (
+        <Box display="flex" flexWrap="wrap" gap={2} mt={3}>
+          <CustomButton 
+            title="Previous"
+            color="#FCFCFC"
+            backgroundColor="#475BE8"
+            handleClick={() => setCurrent((prev) => prev - 1)}
+            disabled={!(current > 1)}
+          />
+          <Box display={{ xs: "hidden", sm: "flex" }} alignItems="center" gap="5px">
+            Page{' '}<strong>{current} of {pageCount}</strong>
+          </Box>
+          <CustomButton 
+            title="Next"
+            color="#FCFCFC"
+            backgroundColor="#475BE8"
+            handleClick={() => setCurrent((prev) => prev + 1)}
+            disabled={current === pageCount}
+          />
+          <Select
+            variant="outlined"
+            color="info"
+            displayEmpty
+            required
+            inputProps={{ "aria-label": "Without label" }}
+            defaultValue={10}
+            onChange={() => {}}
+          >
+            {[10, 20, 30, 40, 50].map((size) => (
+              <MenuItem key={size} value={size}>Show {size}</MenuItem>
+            ))}
+            
+          </Select>
+        </Box>
+      )}
     </Box>
   )
 }
