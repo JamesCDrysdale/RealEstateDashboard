@@ -35,6 +35,7 @@ const AllProperties = () => {
 
     return {
       title: filtersLogic.find((item) => item.field === 'title')?.value || "",
+      propertyType: filtersLogic.find((item) => item.field === 'propertyType')?.value || "",
     }
   }, [filters])
 
@@ -79,14 +80,29 @@ const AllProperties = () => {
                 required
                 inputProps={{ "aria-label": "Without label" }}
                 defaultValue=""
-                value=""
-                onChange={() => {}}
+                value = {currentFilterValues.propertyType}
+                onChange={(e) => {setFilters([
+                  {
+                    field: 'propertyType',
+                    operator: 'eq',
+                    value: e.target.value
+                  }
+                ], 'replace' )
+              }}
               >
-                <MenuItem
-                  value=""
-                >
-                  All
-                </MenuItem>
+                <MenuItem value="">All</MenuItem>
+                {[
+                  'Bungalow', 
+                  'Chalet', 
+                  'Cottage', 
+                  'Duplex', 
+                  'Flat', 
+                  'House',
+                  'Mansion',
+                  'Studio',
+                ].map((type) => (
+                  <MenuItem key={type} value={type.toLowerCase()}>{type}</MenuItem>
+                ))}
               </Select>
             </Box>
           </Box>

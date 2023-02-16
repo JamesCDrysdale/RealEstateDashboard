@@ -99,14 +99,11 @@ const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onF
                   <MenuItem value="bungalow">Bungalow</MenuItem>
                   <MenuItem value="chalet">Chalet</MenuItem>
                   <MenuItem value="cottage">Cottage</MenuItem>
-                  <MenuItem value="detached">Detatched</MenuItem>
                   <MenuItem value="duplex">Duplex</MenuItem>
-                  <MenuItem value="endofterrace">End-of-terrace</MenuItem>
                   <MenuItem value="flat">Flat</MenuItem>
+                  <MenuItem value="flat">House</MenuItem>
                   <MenuItem value="mansion">Mansion</MenuItem>
-                  <MenuItem value="semidetatched">Semi-detached</MenuItem>
                   <MenuItem value="studio">Studio</MenuItem>
-                  <MenuItem value="terraced">Terraced</MenuItem>
                 </Select>
               </FormControl>
               <FormControl>
