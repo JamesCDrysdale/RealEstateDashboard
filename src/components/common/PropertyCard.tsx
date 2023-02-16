@@ -10,7 +10,7 @@ const PropertyCard = ({ id, title, location, price, photo}: PropertyCardProps) =
       component={Link}
       to={`/properties/${id}`}
       sx={{
-        maxWidth: '350px',
+        maxWidth: '330px',
         padding: '10px',
         textDecoration: 'none',
         '&:hover': {
