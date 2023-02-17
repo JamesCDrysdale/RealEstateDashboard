@@ -38,6 +38,7 @@ const PropertyDetails = () => {
                         alt={propertyDetails.title} 
                         height={500}
                         style={{ objectFit: "cover", borderRadius: "10px" }}
+                        className="property_details_img"
                     />
                 </Box>
 
