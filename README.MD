@@ -2,7 +2,7 @@
 
 <div align="center" style="margin: 30px;">
     <a href="https://refine.dev">
-    <img src="src/assets/movado.png"  align="center" style="max-width: 200px; " />
+    <img src="src/assets/movado.png"  align="center" style="width: 300px; " />
     </a>
 </div>
 <br/>
@@ -34,9 +34,14 @@ You must create a website for employees that will mainly show a list of the comp
 
 &check; Agents' should be able to add new properties
 
-&minus; Agents' should be able to edit the details of a property
+&check; Agents' should be able to edit the details of a property
 
 &check; Agents' should be able to delete properties that have been sold
+
+
+### Extensions
+
+&minus; There should be an agents page that displays a list of all the Agents.
 
 
 ## Available Scripts
