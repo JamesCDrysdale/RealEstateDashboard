@@ -2,18 +2,41 @@
 
 <div align="center" style="margin: 30px;">
     <a href="https://refine.dev">
-    <img src="https://refine.ams3.cdn.digitaloceanspaces.com/refine_logo.png"  align="center" />
+    <img src="src/assets/movado.png"  align="center" style="max-width: 300px; " />
     </a>
 </div>
 <br/>
 
-This [refine](https://github.com/pankod/refine) project was generated with [superplate](https://github.com/pankod/refine).
 
-## Getting Started
+## Brief
 
-**refine** is a React-based framework for building data-intensive applications in no time ✨
+**Company Name**: Movado
+**Company Description**:
 
-Refine offers lots of out-of-the box functionality for rapid development, without compromising extreme customizability. Use-cases include, but are not limited to admin panels, B2B applications and dashboards.
+We are a big chain of estate agents that sell properties in the UK. We are able to offer an excellent experience because of our friendly and knowledgable local estate agents. Our target audience is people who are looking for their dream home. We want to convey a sense of luxury, while at the same time being down-to-earth.
+
+**Brief**:
+You must create a website for employees that will mainly show a list of the company's properties. The goal is to make a website that is easy to navigate. Besides the properties page, the website will need an an agents' page, and a dashboard. The properties page should show all the properties and allow employees to add new properties to the market. There should be a means for agents' to delete to edit properties. They would prefer a modern design, and would like you to use the brand color, which is purple. Take into account the client's preferences and values.
+
+### MVP
+
+
+&check; There should be a properties page
+
+&check; A property should have a descriptive title, a price, location and detailed description.
+
+&check; A property should be associated with the Agent who created the listing.
+
+&check; The properties page show show all of the properties
+
+&minus; Agents' should be able to see all the details of a property
+
+&check; Agents' should be able to add new properties
+
+&minus; Agents' should be able to edit the details of a property
+
+&minus; Agents' should be able to delete properties that have been sold
+
 
 ## Available Scripts
 
@@ -35,10 +58,9 @@ Refine offers lots of out-of-the box functionality for rapid development, withou
     npm run start
 ```
 
-## Learn More
+## Technologies Used
 
-To learn more about **refine**, please check out the [Documentation](https://refine.dev/docs)
-
+- **refine** [Docs](https://refine.dev/docs)
 - **REST Data Provider** [Docs](https://refine.dev/docs/core/providers/data-provider/#overview)
 - **Material UI** [Docs](https://refine.dev/docs/ui-frameworks/mui/tutorial/)
 - **Inferencer** [Docs](https://refine.dev/docs/packages/documentation/inferencer)
