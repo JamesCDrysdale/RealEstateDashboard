@@ -101,7 +101,7 @@ const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onF
                   <MenuItem value="cottage">Cottage</MenuItem>
                   <MenuItem value="duplex">Duplex</MenuItem>
                   <MenuItem value="flat">Flat</MenuItem>
-                  <MenuItem value="flat">House</MenuItem>
+                  <MenuItem value="house">House</MenuItem>
                   <MenuItem value="mansion">Mansion</MenuItem>
                   <MenuItem value="studio">Studio</MenuItem>
                 </Select>
@@ -162,9 +162,8 @@ const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onF
                       hidden
                       accept="image/*"
                       type="file"
-                      onChange={(e) => {
-                        // @ts-ignore
-                        handleImageChange(e.target.files[0])
+                      onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                        handleImageChange(e.target.files![0]);
                       }}
                     />
                   </Button>
@@ -186,4 +185,4 @@ const Form = ({type, register, handleSubmit, handleImageChange, formLoading, onF
   )
 }
 
-export default Form
+export default Form;
