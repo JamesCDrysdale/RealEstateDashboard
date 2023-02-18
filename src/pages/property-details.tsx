@@ -8,7 +8,6 @@ import {
     Edit,
     Phone,
     Place,
-    Star,
 } from "@mui/icons-material";
 
 import { CustomButton } from "components";
@@ -101,6 +100,7 @@ const PropertyDetails = () => {
 
             </Stack>
 
+            {/* Body: Image & Property Type & Description & Agent & Map  */}
             <Stack gap={4}>
                 {/* Image & Type & Description */}
                 <Box mt="20px" display="flex" flexDirection={{ xs: 'column', lg: 'row' }} gap={4} justifyContent="center">
@@ -259,7 +259,7 @@ const PropertyDetails = () => {
                         <Stack>
                             <Stack>
                             <img
-                                src="client/src/assets/GoogleMapsedinburgh.png"
+                                src="https://raw.githubusercontent.com/JamesCDrysdale/RealEstateDashboard/main/src/assets/GoogleMapsedinburgh.png"
                                 alt=""
                                 width="100%"
                                 height={306}
@@ -269,7 +269,7 @@ const PropertyDetails = () => {
 
                     <Box>
                         <CustomButton
-                            title="Book Now"
+                            title="Book Viewing Now"
                             backgroundColor="#475BE8"
                             color="#FCFCFC"
                             fullWidth
@@ -278,9 +278,6 @@ const PropertyDetails = () => {
                         </Stack>
                 </Box> 
             </Stack>
-
-            
-
         </Box>
     )
 }
