@@ -2,7 +2,7 @@
 
 <div align="center" style="margin: 30px;">
     <a href="https://refine.dev">
-    <img src="src/assets/movado.png"  align="center" style="max-width: 300px; " />
+    <img src="src/assets/movado.png"  align="center" style="max-width: 200px; " />
     </a>
 </div>
 <br/>
@@ -11,6 +11,7 @@
 ## Brief
 
 **Company Name**: Movado
+
 **Company Description**:
 
 We are a big chain of estate agents that sell properties in the UK. We are able to offer an excellent experience because of our friendly and knowledgable local estate agents. Our target audience is people who are looking for their dream home. We want to convey a sense of luxury, while at the same time being down-to-earth.
@@ -29,13 +30,13 @@ You must create a website for employees that will mainly show a list of the comp
 
 &check; The properties page show show all of the properties
 
-&minus; Agents' should be able to see all the details of a property
+&check; Agents' should be able to see all the details of a property
 
 &check; Agents' should be able to add new properties
 
 &minus; Agents' should be able to edit the details of a property
 
-&minus; Agents' should be able to delete properties that have been sold
+&check; Agents' should be able to delete properties that have been sold
 
 
 ## Available Scripts
