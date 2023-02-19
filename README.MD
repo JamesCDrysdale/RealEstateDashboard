@@ -22,27 +22,35 @@ You must create a website for employees that will mainly show a list of the comp
 ### MVP
 
 
-&check; There should be a properties page
+&check; There should be a properties page.
 
 &check; A property should have a descriptive title, a price, location and detailed description.
 
 &check; A property should be associated with the Agent who created the listing.
 
-&check; The properties page show show all of the properties
+&check; The properties page show show all of the properties.
 
-&check; Agents' should be able to see all the details of a property
+&check; Agents' should be able to see all the details of a property.
 
-&check; Agents' should be able to add new properties
+&check; Agents' should be able to add new properties.
 
-&check; Agents' should be able to edit the details of a property
+&check; Agents' should be able to edit the details of a property.
 
-&check; Agents' should be able to delete properties that have been sold
+&check; Agents' should be able to delete properties that have been sold.
 
+&check; There should be a Dashboard page that displays some data.
+
+&check; There should be an agents page that displays a list of all the Agents.
 
 ### Extensions
 
-&minus; There should be an agents page that displays a list of all the Agents.
+&check; Agents' should be able to view a profile page for their own account.
 
+&check; Agents' should be able to see full profiles of other Agents.
+
+&minus; The Dashboard should show a list of Properties.
+
+&minus; The Dashboard should show a list of Agents.
 
 ## Available Scripts
 
