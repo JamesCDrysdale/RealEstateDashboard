@@ -40,7 +40,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
         >
           <Box flex={1} display="flex" flexDirection={{ xs: 'column', md: 'row' }} gap="20px">
             <img
-              src={checkImage(avatar) ? avatar : ""}
+              src={checkImage(avatar) ? avatar : "https://raw.githubusercontent.com/JamesCDrysdale/RealEstateDashboard/main/src/assets/blank-profile.png"}
               width={78}
               height={78}
               alt="user_profile"
