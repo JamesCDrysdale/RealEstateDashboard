@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Refine, AuthProvider } from "@pankod/refine-core";
 import {
   notificationProvider,
@@ -11,14 +9,11 @@ import {
 } from "@pankod/refine-mui";
 import {
   AccountCircleOutlined,
-  ChatBubbleOutline,
   PeopleAltOutlined,
-  StarOutlineRounded,
   VillaOutlined
 } from '@mui/icons-material';
 
 import dataProvider from "@pankod/refine-simple-rest";
-// import { MuiInferencer } from "@pankod/refine-inferencer/mui";
 import routerProvider from "@pankod/refine-react-router-v6";
 import axios, { AxiosRequestConfig } from "axios";
 import { ColorModeContextProvider } from "contexts";
@@ -144,16 +139,6 @@ function App() {
               list: Agents,
               show: AgentProfile,
               icon: <PeopleAltOutlined />
-            },
-            {
-              name: "reviews",
-              list: Home,
-              icon: <StarOutlineRounded />
-            },
-            {
-              name: "messages",
-              list: Home,
-              icon: <ChatBubbleOutline />
             },
             {
               name: "my-profile",
